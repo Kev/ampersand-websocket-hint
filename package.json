@@ -1,0 +1,23 @@
+{
+  "name": "ampersand-websocket-hint",
+  "version": "0.0.1",
+  "description": "Mixin for Ampersand Models that updates them when receiving hints over websockets that server data have changed",
+  "main": "ampersand-websocket-hint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kev/ampersand-websocket-hint"
+  },
+  "keywords": [
+    "ampersand",
+    "websocket"
+  ],
+  "author": "Kevin Smith <kevin.smith@isode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kev/ampersand-websocket-hint/issues"
+  },
+  "homepage": "https://github.com/Kev/ampersand-websocket-hint"
+}
