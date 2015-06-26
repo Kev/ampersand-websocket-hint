@@ -1,6 +1,6 @@
 {
   "name": "ampersand-websocket-hint",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Mixin for Ampersand Models that updates them when receiving hints over websockets that server data have changed",
   "main": "ampersand-websocket-hint.js",
   "scripts": {
