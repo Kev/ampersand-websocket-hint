@@ -1,6 +1,6 @@
 {
   "name": "ampersand-websocket-hint",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Mixin for Ampersand Models that updates them when receiving hints over websockets that server data have changed",
   "main": "ampersand-websocket-hint.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Kev/ampersand-websocket-hint",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash.result": "^3.1.2"
   }
 }
