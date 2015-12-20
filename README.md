@@ -7,7 +7,7 @@ Upon receiving a hint from the server, an Ampersand model that has this
 mixin will check if the hint refers to the URL used by this model and if
 so will check if it is currently caching data; if it is, it'll refresh
 it from the server asynchronously. This means that unfetched models won't
-trigger unnecessary traffic.
+trigger unnecessary traffic (TODO - currently fetches always).
 
 ## install
 
@@ -26,7 +26,7 @@ var HintedModel = Model.extend(WebSocketHint, {
 	props: {
 		name: 'string'
 	},
-	urlRoot: '/api/hinted-model'
+	url: '/api/hinted-model'
 });
 
 var ws = new WebSocket('ws://...');
@@ -55,6 +55,6 @@ The websocket messages received need to be JSON, and need to fit this format:
 ```javascript
 {
   type: 'ampersand-websocket-hint',
-  urlRoot: '/api/hinted-model'
+  url: '/api/hinted-model'
 }
 ```

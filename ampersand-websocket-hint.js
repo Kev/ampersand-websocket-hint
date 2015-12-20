@@ -2,6 +2,8 @@
 // All rights reserved.
 // See the LICENSE file for more information.
 
+var result = require('lodash.result');
+
 var setupListeners = function(model) {
   //console.log("Setup Listeners");
   if (!model.websocket || model.ampersandWebsocketHintInit) {
@@ -22,8 +24,8 @@ var setupListeners = function(model) {
       //console.log("Skipping non-hint: " + type);
       return;
     }
-    var urlRoot = data.urlRoot;
-    if (urlRoot != self.urlRoot) {
+    var url = result(self, 'url');
+    if (data.url != url) {
       //console.log("Skipping different URL: " + urlRoot + " : " + self.urlRoot);
       return;
     }
